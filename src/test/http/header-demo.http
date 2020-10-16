@@ -1,0 +1,27 @@
+### @RequestHeader 注解直接获取指定 key
+POST http://localhost:8083/header/getAuthorizationByKey
+Authorization: Bear aaaaaaaa-getAuthorizationByKey
+
+### @RequestHeader 注解使用 Map 接收
+POST http://localhost:8083/header/getAuthorizationByMap
+authorization: Bear bbbbbbbb-getAuthorizationByMap
+
+### @RequestHeader 注解使用 MultiValueMap 接收
+POST http://localhost:8083/header/getAuthorizationByMultiValueMap
+authorization: Bear ccccccccc-getAuthorizationByMultiValueMap
+
+### @RequestHeader 注解使用 HttpHeaders 接收
+POST http://localhost:8083/header/getAuthorizationByHeaders
+Authorization: Bear dddddddddd-getAuthorizationByHeaders
+
+### 从 HttpServletRequest 获取
+POST http://localhost:8083/header/getAuthorizationByServlet
+authorization: Bear eeeeeeeeee-getAuthorizationByServlet
+
+### token 里面获取
+POST http://localhost:8083/header/checkToken
+authorization: Bear fffffffff-checkToken-capital
+
+
+
+
